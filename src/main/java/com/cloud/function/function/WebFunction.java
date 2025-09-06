@@ -55,6 +55,9 @@ public class WebFunction {
 
             Function<String, Integer> lengthFunction =  functionCatalog.lookup("getLength");
             System.out.println("length is "+ lengthFunction.apply("Siddesh aparaj"));
+
+            Function<String, Integer> upperClassFunction =  functionCatalog.lookup("upperCaseFunction");
+            System.out.println("length is "+ upperClassFunction.apply("Siddesh aparaj"));
         };
     }
 
